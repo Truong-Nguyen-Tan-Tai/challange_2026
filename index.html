@@ -13,6 +13,12 @@
   a:hover { border-color: #0B6E3F; }
   a b { font-family: ui-monospace, monospace; color: #0B6E3F; font-size: 17px; }
   a span { font-size: 14px; color: #475569; }
+  .plates { margin-top: 10px; padding: 16px 20px; background: #fff; border: 1px dashed #CBD5E1; border-radius: 12px; }
+  .plates h2 { font-size: 15px; margin: 0 0 6px; }
+  .plates p { font-size: 13px; margin: 0 0 10px; }
+  .plates dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; font-size: 14px; }
+  .plates dt { font-family: ui-monospace, monospace; font-weight: 700; color: #0B6E3F; }
+  .plates dd { margin: 0; color: #475569; }
 </style>
 </head>
 <body>
@@ -22,6 +28,15 @@
   <a href="customer/"><b>/customer</b><span>Ứng dụng khách hàng ・ お客様アプリ</span></a>
   <a href="technician/"><b>/technician</b><span>Ứng dụng kỹ thuật viên ・ 整備士アプリ</span></a>
   <a href="operator/"><b>/operator</b><span>Console trụ sở ・ 本部コンソール</span></a>
+  <section class="plates">
+    <h2>Biển số mẫu để demo bảo hiểm ・ 保険デモ用ナンバー</h2>
+    <p>Nhập vào ô biển số ở app khách — hệ thống tự tra bảo hiểm.<br>お客様アプリのナンバー欄に入力すると保険を自動照会します。</p>
+    <dl>
+      <dt>浜松 300 あ 12-34</dt><dd>Có hỗ trợ sửa chữa ・ 修理補償あり</dd>
+      <dt>浜松 580 え 45-20</dt><dd>Chỉ hỗ trợ kéo xe ・ レッカーのみ</dd>
+      <dt>Biển số khác ・ その他</dt><dd>Không tìm thấy bảo hiểm ・ 保険なし</dd>
+    </dl>
+  </section>
 </main>
 </body>
 </html>
